@@ -7,7 +7,7 @@ declare
  tabliczka t_pr;
  pr_upr pr_rec;
  cursor pracownicy is 
- (select * from employees) ;
+ (select * from employees where 1=1) ;
 begin
  open pracownicy;
  loop 
@@ -18,3 +18,4 @@ begin
  end loop;
  close pracownicy;
 end;
+/
